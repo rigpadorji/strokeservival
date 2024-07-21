@@ -73,7 +73,7 @@ nav ul li a {
     align-items: flex-start; /* Align items to the top */
     width: 100%; /* Ensure the container spans the full width */
     flex: 1; /* Allow container to expand and fill available space */
-    padding:10px; /* Optional: Add padding for spacing */
+    padding:20px; /* Optional: Add padding for spacing */
 }
 
 .subcontainer1 {
