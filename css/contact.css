@@ -1,0 +1,116 @@
+/* Base Styles */
+html, body {
+    font-family: 'Roboto', sans-serif; /* Set Roboto as the default font */
+    line-height: 1.6; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: url('hero-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #3498DB; /* Sky Blue for header text */
+}
+
+.myhead {
+    margin-top: 0;
+    background-color: #3498DB; /* Default color */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%; /* Ensure it spans the full width */
+}
+
+nav {
+    display: flex;
+    width: 100%; /* Ensure nav spans the full width */
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Adjusted for better visibility on the background color */
+    font-size: 1.2em;
+    text-decoration: none; /* Remove underline */
+}
+
+.container {
+    flex: 1; /* Allow the container to take available space */
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%; /* Ensure the container spans the full width */
+    padding: 20px; /* Optional: Add padding for spacing */
+}
+
+.subcontainer {
+    flex: 1; /* Allow this container to grow less compared to subcontainer1 */
+    max-width: 80%; /* Limit the width of the image container */
+}
+
+.subcontainer {
+    position: relative; /* Required for absolute positioning of overlay */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2C3E50;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .myhead {
+        height: 60px;
+        padding: 0 10px;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+}
